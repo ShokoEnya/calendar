@@ -7,6 +7,13 @@
           <%= meeting.name %>
         </div>
       <% end %>
+      <% @menu = @menus.sample %><br>
+      <div class="dinner-menu">
+        <%= "<今日のメニュー>" %><br>
+        <%= @menu.main %><br>
+        <%= @menu.side_1 %><br>
+        <%= @menu.side_2 %><br>
+      </div>
     <% end %>
   </div>
   <div class="sub">
