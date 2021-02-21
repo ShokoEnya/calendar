@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>タイトル:</strong>
   <%= @meeting.name %>
 </p>
 
 <p>
-  <strong>Start time:</strong>
+  <strong>開始時間:</strong>
   <%= @meeting.start_time %>
 </p>
 
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>
+<%= link_to '編集', edit_meeting_path(@meeting) %> |
+<%= link_to '戻る', meetings_path %>
