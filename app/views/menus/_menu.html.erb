@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="one-day-menu">
+    <%= "主菜 ：#{menu.main}" %><br>
+    <%= "副菜1：#{menu.side_1}" %><br>
+    <%= "副菜2：#{menu.side_2}" %><br>
+  </div>
+    <%= link_to "編集", "#", class: :menu__btn %>
+    <%= link_to "削除", "#", method: :delete, class: :menu__btn %>
+</div>

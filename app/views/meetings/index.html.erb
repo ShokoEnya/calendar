@@ -17,7 +17,7 @@
     <% end %>
   </div>
   <div class="sub">
-    <h2>予定</h2>
+    <h2 class="index-header">予定</h2>
     <table>
       <tbody>
         <% @meetings.each do |meeting| %>
@@ -30,8 +30,11 @@
           </tr>
         <% end %>
       </tbody>
-    </table>    
-    <%= link_to '予定の登録', new_meeting_path %><br>
-    <%= link_to "メニューを増やす", new_menu_path %>
+    </table>
+    <div class="bottom-commands">
+      <%= link_to '予定の登録', new_meeting_path %><br>
+      <%= link_to "メニューを増やす", new_menu_path %><br>
+      <%= link_to "メニューの一覧", menus_path %><br>
+    </div>
   </div>
 </div>

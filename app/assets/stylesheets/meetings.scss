@@ -17,7 +17,7 @@
 }
 
 .week-row {
-  height: 250px;
+  height: 200px;
 }
 
 #box {
@@ -42,4 +42,15 @@
   padding: 5px;
   margin: 0 5px;
   text-align: center;
+}
+
+.index-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.bottom-commands {
+  margin-top: 20px;
 }
