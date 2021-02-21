@@ -1,3 +1,56 @@
-// Place all the styles related to the Meetings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.wrapper {
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+}
+
+.calendar-heading {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.calendar-title {
+  font-size: 25px;
+}
+
+.week-row {
+  height: 200px;
+}
+
+#box {
+  position: relative;
+}
+
+.week-day {
+  width: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(252, 225, 225);
+  margin-bottom: 20px;
+}
+
+.dinner-menu {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 85%;
+  padding: 5px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.index-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.bottom-commands {
+  margin-top: 20px;
+}

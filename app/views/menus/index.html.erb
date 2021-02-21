@@ -1,0 +1,8 @@
+<div class="menu-main">
+  <h2 class="menu-header">メニューの一覧</h2>
+  <div class="inner">
+    <%= render partial: "menu", collection: @menus %>
+  </div>
+  <%= link_to "メニューを増やす", new_menu_path %><br>
+  <%= link_to "カレンダーに戻る", root_path %><br>
+</div>

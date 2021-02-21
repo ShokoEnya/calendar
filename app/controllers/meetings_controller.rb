@@ -4,6 +4,7 @@ class MeetingsController < ApplicationController
   # GET /meetings or /meetings.json
   def index
     @meetings = Meeting.all
+    @menus = Menu.order("RAND()").all
   end
 
   # GET /meetings/1 or /meetings/1.json

@@ -1,28 +1,40 @@
-<%= month_calendar events: @meetings do |date, meetings| %>
-  <%= date.day %>
-  <% meetings.each do |meeting|%>
-    <div>
-      <%= meeting.name %>
-    </div>
-  <% end %>
-<% end %>
-
-<h1>Meetings</h1>
-
-<table>
-  <tbody>
-    <% @meetings.each do |meeting| %>
-      <tr>
-        <td><%= meeting.name %></td>
-        <td><%= meeting.start_time %></td>
-        <td><%= link_to 'Show', meeting %></td>
-        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
-        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div class="wrapper">
+  <div class="main">
+    <%= week_calendar events: @meetings do |date, meetings| %>
+      <div class="week-day"><%= date.day %></div>
+      <% meetings.each do |meeting|%>
+        <div>
+          <%= meeting.name %>
+        </div>
+      <% end %>
+      <% @menu = @menus.sample %><br>
+      <div class="dinner-menu">
+        <%= "<今日のメニュー>" %><br>
+        <%= @menu.main %><br>
+        <%= @menu.side_1 %><br>
+        <%= @menu.side_2 %><br>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Meeting', new_meeting_path %>
+  </div>
+  <div class="sub">
+    <h2 class="index-header">予定</h2>
+    <table>
+      <tbody>
+        <% @meetings.each do |meeting| %>
+          <tr>
+            <td><%= meeting.name %></td>
+            <td><%= meeting.start_time %></td>
+            <td><%= link_to '詳細', meeting %></td>
+            <td><%= link_to '編集', edit_meeting_path(meeting) %></td>
+            <td><%= link_to '削除', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <div class="bottom-commands">
+      <%= link_to '予定の登録', new_meeting_path %><br>
+      <%= link_to "メニューを増やす", new_menu_path %><br>
+      <%= link_to "メニューの一覧", menus_path %><br>
+    </div>
+  </div>
+</div>

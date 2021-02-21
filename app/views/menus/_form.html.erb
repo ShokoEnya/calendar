@@ -1,0 +1,17 @@
+<%= form_with model: @menu, local: true do |f| %>
+  <div class="field">
+    <%= f.label :main, "主菜" %><br>
+    <%= f.text_field :main %>
+  </div>
+  <div class="field">
+    <%= f.label :side_1, "副菜1" %><br>
+    <%= f.text_field :side_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :side_2, "副菜2" %><br>
+    <%= f.text_field :side_2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "登録", class: :form_btn %>
+  </div>
+<% end %>
