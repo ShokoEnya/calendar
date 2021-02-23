@@ -1,24 +1,10 @@
-# README
+# Calendar
+予定管理ができるだけでなく、毎日の夕食の献立をランダムに決めてくれる週間カレンダー<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+予定のタイトル、日にち、開始時間を登録するとカレンダーに反映される。<br>
+世の主婦やママの中には、毎日の献立を考えるのに頭を悩ませている人も少なくないだろう。このカレンダーには、夕食メニューを登録する機能があり登録したメニューの中から毎日1メニューずつランダムにカレンダーに表示されるので、毎日献立を考える煩わしさから解放されるだろう。<br>
 
-Things you may want to cover:
+## Demo
+![サンプル画像](https://user-images.githubusercontent.com/75065059/108810921-87bee400-75ef-11eb-90e4-f32922ea7a78.png)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
